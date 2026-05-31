@@ -14,17 +14,17 @@
        RECORD CONTAINS 100 CHARACTERS.
 
        01  ACCOUNT-RECORD.
-           05    ACCOUNT-ID            PIC 9(10).
-           05    ACCOUNT-NAME          PIC X(30).
+           05    ACCOUNT-ID              PIC 9(10).
+           05    ACCOUNT-NAME            PIC X(30).
            05    CUSTOMER-ID.
-           10    PRIMARY-ID      PIC 9(10).
-           10    SECONDARY-ID    PIC 9(10).
+               10    PRIMARY-ID          PIC 9(10).
+               10    SECONDARY-ID        PIC 9(10).
            05    ACCOUNT-CREATE-DATE.
-               10    ACD-YEAR        PIC 9(4).
-               10    ACD-MON         PIC 9(2).
-               10    ACD-DAY         PIC 9(2).
-           05    CURR-BALANCE          PIC 9(12)V99.
-           05    FILLER                PIC X(18).
+               10    ACD-YEAR            PIC 9(4).
+               10    ACD-MON             PIC 9(2).
+               10    ACD-DAY             PIC 9(2).
+           05    CURR-BALANCE            PIC 9(12)V99.
+           05    FILLER                  PIC X(18).
 
        WORKING-STORAGE SECTION.
        01  WS-OPTION                   PIC 9 VALUE 0.
@@ -42,8 +42,8 @@
        MAIN-LOGIC.
            PERFORM CHECK-FILE.
            PERFORM UNTIL WS-OPTION = 3
-           PERFORM DISPLAY-MENU
-           PERFORM HANDLE-OPTION
+               PERFORM DISPLAY-MENU
+               PERFORM HANDLE-OPTION
            END-PERFORM
            
            DISPLAY "GOODBYE"
