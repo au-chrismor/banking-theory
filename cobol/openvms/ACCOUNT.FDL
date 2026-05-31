@@ -1,0 +1,15 @@
+TITLE                       "Sequential Account File for OpenVMS"
+IDENT                       31-MAY-2026 OpenVMS FDL Editor
+
+SYSTEM
+    SOURCE                  OpenVMS
+
+FILE
+    ALLOCATION              1000
+    BEST_TRY_CONTIGUOUS     yes
+    ORGANIZATION            SEQUENTIAL
+    EXTENSION               100
+    
+RECORD
+    FORMAT                  FIXED
+    SIZE                    100
