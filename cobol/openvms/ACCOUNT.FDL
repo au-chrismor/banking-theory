@@ -9,6 +9,11 @@ FILE
     BEST_TRY_CONTIGUOUS     yes
     ORGANIZATION            SEQUENTIAL
     EXTENSION               100
+
+SHARING
+    GET                     yes
+    PUT                     yes
+    UPDATE                  yes
     
 RECORD
     FORMAT                  FIXED
