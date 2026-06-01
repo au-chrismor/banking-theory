@@ -109,7 +109,7 @@
                    NOT AT END
                        DISPLAY "ACCOUNT NUMBER: ", ACCOUNT-ID
                        DISPLAY "ACCOUNT NAME:", ACCOUNT-NAME
-                       DISPLAY "BALANCE: ", CURR-BALANCE
+                       DISPLAY "BALANCE: $", CURR-BALANCE
                        DISPLAY "-----------------------------"
                END-READ
            END-PERFORM
