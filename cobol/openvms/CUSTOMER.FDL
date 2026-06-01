@@ -1,0 +1,15 @@
+TITLE                       "Sequential Customer File for OpenVMS"
+IDENT                       31-MAY-2026 OpenVMS FDL Editor
+
+SYSTEM
+    SOURCE                  OpenVMS
+
+FILE
+    ALLOCATION              10000
+    BEST_TRY_CONTIGUOUS     yes
+    ORGANIZATION            SEQUENTIAL
+    EXTENSION               1000
+    
+RECORD
+    FORMAT                  FIXED
+    SIZE                    1000
